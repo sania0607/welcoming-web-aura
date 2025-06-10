@@ -2,7 +2,8 @@ import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 const Hero = () => {
-  return <section id="home" className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-16">
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-16">
       <div className="absolute inset-0 bg-white/10"></div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -13,7 +14,7 @@ const Hero = () => {
               <div className="w-48 h-48 rounded-full overflow-hidden profile-hover floating-animation border-4 border-white shadow-2xl">
                 <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face" alt="Profile" className="w-full h-full object-cover" />
               </div>
-              <div className="absolute -inset-4 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full opacity-20 animate-pulse my-0"></div>
+              <div className="absolute -inset-2 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full opacity-20 animate-pulse"></div>
             </div>
           </div>
 
@@ -65,6 +66,7 @@ const Hero = () => {
       <div className="absolute bottom-20 left-20 w-12 h-12 bg-blue-200/30 rounded-full animate-float" style={{
       animationDelay: '4s'
     }}></div>
-    </section>;
+    </section>
+  );
 };
 export default Hero;
