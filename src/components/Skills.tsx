@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Code, Database, Globe, Smartphone, Server, Brain } from 'lucide-react';
+import { Code, Database, Globe, Smartphone, Server, Brain, Image } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -31,24 +30,27 @@ const Skills = () => {
       title: "freeCodeCamp Responsive Web Design",
       issuer: "freeCodeCamp",
       date: "2024",
-      status: "Completed"
+      status: "Completed",
+      image: null // placeholder for certificate image
     },
     {
       title: "JavaScript Algorithms and Data Structures",
       issuer: "freeCodeCamp", 
       date: "2024",
-      status: "In Progress"
+      status: "In Progress",
+      image: null // placeholder for certificate image
     },
     {
       title: "React Developer Certification",
       issuer: "Meta",
       date: "2024",
-      status: "Planned"
+      status: "Planned",
+      image: null // placeholder for certificate image
     }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-cream via-mint to-lavender relative overflow-hidden">
+    <section id="skills" className="pt-16 py-20 bg-gradient-to-br from-cream via-mint to-lavender relative overflow-hidden">
       <style>
         {`
           @keyframes skillPulse {
@@ -110,6 +112,24 @@ const Skills = () => {
               className="glass-card rounded-xl p-6 hover:shadow-xl transition-all duration-300 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
+              {/* Certificate Image Placeholder */}
+              <div className="mb-4 aspect-video bg-gray-100 rounded-lg border-2 border-dashed border-gray-300 flex items-center justify-center hover:border-purple-400 transition-colors cursor-pointer group">
+                {cert.image ? (
+                  <img 
+                    src={cert.image} 
+                    alt={`${cert.title} certificate`}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                ) : (
+                  <div className="text-center">
+                    <Image className="w-8 h-8 text-gray-400 group-hover:text-purple-400 transition-colors mx-auto mb-2" />
+                    <p className="text-xs text-gray-500 group-hover:text-purple-500 transition-colors">
+                      Add certificate image
+                    </p>
+                  </div>
+                )}
+              </div>
+
               <div className="flex items-center justify-between mb-3">
                 <Brain className="w-6 h-6 text-purple-500" />
                 <span className={`px-3 py-1 rounded-full text-xs font-medium ${
