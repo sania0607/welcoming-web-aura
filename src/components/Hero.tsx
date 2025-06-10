@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-16">
       <div className="absolute inset-0 bg-white/10"></div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
