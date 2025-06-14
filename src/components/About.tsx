@@ -35,19 +35,20 @@ const About = () => {
 
         <div className="animate-slide-in-left">
           <h3 className="text-2xl font-semibold mb-6 text-gray-800 text-center">
-            Hello! I'm passionate about creating digital experiences.
+            Hello! I'm Sania Rajput, passionate about creating digital experiences.
           </h3>
           
           <div className="space-y-4 text-gray-600 leading-relaxed max-w-full">
             <p>
-              I'm an aspiring web developer with a love for clean code and beautiful design. 
+              I'm an aspiring web developer with a love for clean code, beautiful design, and continuous personal growth. 
               My journey into tech started with curiosity and has grown into a genuine passion 
-              for solving problems through technology.
+              for solving problems through technology. Recently, I've also started learning about Artificial Intelligence (AI) and Machine Learning (ML), 
+              and I'm excited by the possibilities these fields bring!
             </p>
             
             <p>
               Currently, I'm focused on mastering modern web technologies like React, 
-              TypeScript, and Node.js. I believe in continuous learning and staying 
+              TypeScript, and Node.js, as well as expanding my knowledge of AI and ML concepts. I believe in continuous learning and staying 
               up-to-date with the latest industry trends.
             </p>
             
