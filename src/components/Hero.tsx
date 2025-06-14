@@ -1,10 +1,8 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Hero = () => {
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-16">
+  return <section id="home" className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-16">
       <div className="absolute inset-0 bg-white/10"></div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -20,9 +18,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Text */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
-            Hi, I'm [Your Name]
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">Hi, I'm Sania Rajput</h1>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-4 font-light">
             Aspiring Web Developer & Tech Enthusiast
@@ -41,18 +37,8 @@ const Hero = () => {
             </Button>
             
             {/* Make Download Resume functional */}
-            <a 
-              href="/resume.pdf" 
-              download
-              tabIndex={-1}
-              className="focus:outline-none"
-            >
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-2 border-purple-300 text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-full transition-all duration-300"
-              >
+            <a href="/resume.pdf" download tabIndex={-1} className="focus:outline-none">
+              <Button asChild variant="outline" size="lg" className="border-2 border-purple-300 text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-full transition-all duration-300">
                 <span>
                   <Download className="mr-2" size={20} />
                   Download Resume
@@ -82,7 +68,6 @@ const Hero = () => {
       <div className="absolute bottom-20 left-20 w-12 h-12 bg-blue-200/30 rounded-full animate-float" style={{
       animationDelay: '4s'
     }}></div>
-    </section>
-  );
+    </section>;
 };
 export default Hero;
