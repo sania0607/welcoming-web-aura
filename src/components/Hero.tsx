@@ -49,7 +49,7 @@ const Hero = () => {
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-gray-700 hover:text-purple-600 hover:bg-white/40 transition-all duration-300 transform hover:scale-110">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-gray-700 hover:text-purple-600 hover:bg-white/40 transition-all duration-300 transform hover:scale-110">
               <Github size={24} />
             </a>
             
