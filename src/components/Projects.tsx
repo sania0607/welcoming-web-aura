@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -6,12 +5,13 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A modern e-commerce solution built with React and Node.js, featuring user authentication, payment integration, and responsive design.",
+      title: "Loan Predictor Model",
+      description:
+        "A machine learning model that predicts loan approvals using Python, pandas, numpy, seaborn, and scikit-learn. Includes data preprocessing, visualization, and classification.",
       image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      technologies: ["Python", "pandas", "numpy", "seaborn", "scikit-learn"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "#",
     },
     {
       title: "Task Management App",
