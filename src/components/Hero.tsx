@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-16">
       <div className="absolute inset-0 bg-white/10"></div>
@@ -20,7 +22,7 @@ const Hero = () => {
                 />
               </div>
               {/* GLOW EFFECT */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute top-8 left-0 right-0 mx-auto bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full opacity-20 animate-pulse w-[212px] h-[212px]"></div>
             </div>
           </div>
 
@@ -80,3 +82,4 @@ const Hero = () => {
     </section>;
 };
 export default Hero;
+
