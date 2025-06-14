@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Code, Database, Globe, Smartphone, Server, Brain, Image } from 'lucide-react';
 
@@ -17,12 +18,8 @@ const Skills = () => {
       title: "Database & Tools",
       icon: <Database className="w-6 h-6" />,
       skills: ["MongoDB", "PostgreSQL", "Git & GitHub", "VS Code", "Figma", "Postman"]
-    },
-    {
-      title: "Mobile & Emerging",
-      icon: <Smartphone className="w-6 h-6" />,
-      skills: ["React Native", "PWAs", "AI/ML Basics", "Cloud Platforms", "DevOps Basics", "Testing"]
     }
+    // Removed "Mobile & Emerging" card as requested
   ];
 
   const certifications = [
@@ -62,7 +59,6 @@ const Skills = () => {
           }
         `}
       </style>
-      
       <div className="absolute inset-0 bg-white/40"></div>
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
@@ -73,7 +69,6 @@ const Skills = () => {
             Continuously learning and building expertise in modern web development technologies
           </p>
         </div>
-
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {skillCategories.map((category, index) => (
@@ -97,14 +92,12 @@ const Skills = () => {
             </div>
           ))}
         </div>
-
         {/* Certifications Section */}
         <div className="text-center mb-12">
           <h3 className="text-2xl md:text-3xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Certifications & Learning Path
           </h3>
         </div>
-
         <div className="grid md:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
             <div
@@ -129,7 +122,6 @@ const Skills = () => {
                   </div>
                 )}
               </div>
-
               <div className="flex items-center justify-between mb-3">
                 <Brain className="w-6 h-6 text-purple-500" />
                 <span className={`px-3 py-1 rounded-full text-xs font-medium ${
@@ -147,7 +139,6 @@ const Skills = () => {
           ))}
         </div>
       </div>
-
       {/* Floating Elements */}
       <div className="absolute top-10 left-10 w-16 h-16 bg-purple-200/20 rounded-full animate-float"></div>
       <div className="absolute bottom-10 right-10 w-20 h-20 bg-pink-200/20 rounded-full animate-float" style={{ animationDelay: '3s' }}></div>
