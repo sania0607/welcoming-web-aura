@@ -31,10 +31,12 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <Button size="lg" className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
-              <Mail className="mr-2" size={20} />
-              Get In Touch
-            </Button>
+            <a href="#contact" className="focus:outline-none">
+              <Button size="lg" className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+                <Mail className="mr-2" size={20} />
+                Get In Touch
+              </Button>
+            </a>
             
             {/* Make Download Resume functional */}
             <a href="/resume.pdf" download tabIndex={-1} className="focus:outline-none">
