@@ -81,7 +81,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-gray-800">Location</p>
-                  <p className="text-gray-600">Your City, State</p>
+                  <p className="text-gray-600">Bijnor, Uttar Pradesh</p>
                 </div>
               </div>
             </div>
