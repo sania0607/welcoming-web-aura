@@ -10,9 +10,16 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <div className="relative">
+              {/* GLOWING BACKGROUND */}
               <div className="w-48 h-48 rounded-full overflow-hidden profile-hover floating-animation border-4 border-white shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face" alt="Profile" className="w-full h-full object-cover" />
+                {/* USER PROFILE IMAGE HERE */}
+                <img
+                  src="/your-image.jpg"
+                  alt="Your Name"
+                  className="w-full h-full object-cover"
+                />
               </div>
+              {/* GLOW EFFECT */}
               <div className="absolute -inset-2 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full opacity-20 animate-pulse"></div>
             </div>
           </div>
