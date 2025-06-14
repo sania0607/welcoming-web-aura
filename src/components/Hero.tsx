@@ -19,6 +19,7 @@ const Hero = () => {
                   src="/your-image.jpg"
                   alt="Your Name"
                   className="w-full h-full object-cover"
+                  style={{ transform: 'translateY(8px)' }}
                 />
               </div>
               {/* GLOW EFFECT */}
@@ -82,4 +83,3 @@ const Hero = () => {
     </section>;
 };
 export default Hero;
-
