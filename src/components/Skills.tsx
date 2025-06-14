@@ -12,12 +12,31 @@ const Skills = () => {
     {
       title: "Backend Development", 
       icon: <Server className="w-6 h-6" />,
-      skills: ["Node.js", "Express.js", "Python", "RESTful APIs", "GraphQL", "Authentication"]
+      skills: [
+        "Python",
+        "Flask",
+        "Node.js",
+        "Express.js",
+        "RESTful APIs",
+        "GraphQL",
+        "Authentication",
+        "pandas",
+        "seaborn"
+      ]
     },
     {
       title: "Database & Tools",
       icon: <Database className="w-6 h-6" />,
-      skills: ["MongoDB", "PostgreSQL", "Git & GitHub", "VS Code", "Figma", "Postman"]
+      skills: [
+        "MongoDB",
+        "PostgreSQL",
+        "Git & GitHub",
+        "VS Code",
+        "Figma",
+        "Postman",
+        "pandas",
+        "seaborn"
+      ]
     }
     // Removed "Mobile & Emerging" card as requested
   ];
