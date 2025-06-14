@@ -16,8 +16,8 @@ const Hero = () => {
               <div className="w-48 h-48 rounded-full overflow-hidden profile-hover floating-animation border-4 border-white shadow-2xl">
                 {/* USER PROFILE IMAGE HERE */}
                 <img
-                  src="/your-image.jpg"
-                  alt="Your Name"
+                  src="/lovable-uploads/a4c952c3-8b02-4644-bd8f-192466ba3810.png"
+                  alt="Sania Rajput"
                   className="w-full h-full object-cover"
                   style={{ transform: 'translateY(8px)' }}
                 />
