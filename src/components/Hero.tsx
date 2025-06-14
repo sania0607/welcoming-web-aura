@@ -43,7 +43,7 @@ const Hero = () => {
             </a>
             
             {/* Make Download Resume functional */}
-            <a href="/resume.pdf" download tabIndex={-1} className="focus:outline-none">
+            <a href="https://drive.google.com/uc?export=download&id=18FpP3J7eKP9S_H1T-br5W_DJJe4hTKsE" download target="_blank" rel="noopener noreferrer" tabIndex={-1} className="focus:outline-none">
               <Button asChild variant="outline" size="lg" className="border-2 border-purple-300 text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-full transition-all duration-300">
                 <span>
                   <Download className="mr-2" size={20} />
