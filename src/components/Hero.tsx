@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-16">
       <div className="absolute inset-0 bg-white/10"></div>
@@ -15,15 +13,12 @@ const Hero = () => {
               {/* GLOWING BACKGROUND */}
               <div className="w-48 h-48 rounded-full overflow-hidden profile-hover floating-animation border-4 border-white shadow-2xl">
                 {/* USER PROFILE IMAGE HERE */}
-                <img
-                  src="/lovable-uploads/a4c952c3-8b02-4644-bd8f-192466ba3810.png"
-                  alt="Sania Rajput"
-                  className="w-full h-full object-cover"
-                  style={{ transform: 'translateY(8px)' }}
-                />
+                <img src="/lovable-uploads/a4c952c3-8b02-4644-bd8f-192466ba3810.png" alt="Sania Rajput" className="w-full h-full object-cover" style={{
+                transform: 'translateY(8px)'
+              }} />
               </div>
               {/* GLOW EFFECT */}
-              <div className="absolute top-8 left-0 right-0 mx-auto bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full opacity-20 animate-pulse w-[212px] h-[212px]"></div>
+              
             </div>
           </div>
 
