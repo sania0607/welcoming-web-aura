@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Heart, Code } from 'lucide-react';
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
             <Heart className="text-pink-300" size={20} fill="currentColor" />
             <span className="text-lg">and</span>
             <Code className="text-blue-300" size={20} />
-            <span className="text-lg">by [Your Name]</span>
+            <span className="text-lg">by Sania Rajput</span>
           </div>
           
           <p className="text-purple-200 mb-4">
