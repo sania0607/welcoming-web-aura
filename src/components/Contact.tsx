@@ -90,7 +90,7 @@ const Contact = () => {
               <h4 className="text-lg font-medium mb-4 text-gray-800">Follow Me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/sania0607"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-white/50 backdrop-blur-sm border border-white/30 text-gray-700 hover:text-purple-600 hover:bg-white/70 transition-all duration-300 transform hover:scale-110"
@@ -99,7 +99,7 @@ const Contact = () => {
                 </a>
                 
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/saniarajput06"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-white/50 backdrop-blur-sm border border-white/30 text-gray-700 hover:text-blue-600 hover:bg-white/70 transition-all duration-300 transform hover:scale-110"
