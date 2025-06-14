@@ -75,28 +75,7 @@ const Education = () => {
         </div>
 
         {/* Certifications Section */}
-        <div>
-          <h3 className="text-2xl font-semibold text-center mb-8 text-gray-800">Certifications</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {certifications.map((cert, index) => <div key={index} className="glass-card rounded-xl p-6 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                <div className="flex items-start space-x-4">
-                  <div className="text-3xl">{cert.icon}</div>
-                  <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-gray-800 mb-2">
-                      {cert.title}
-                    </h4>
-                    <p className="text-purple-600 font-medium mb-1">
-                      {cert.issuer}
-                    </p>
-                    <div className="flex items-center text-gray-600">
-                      <Calendar size={14} className="mr-1" />
-                      <span className="text-sm">{cert.date}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>)}
-          </div>
-        </div>
+        
       </div>
     </section>;
 };
