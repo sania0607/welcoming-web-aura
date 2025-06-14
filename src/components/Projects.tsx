@@ -8,7 +8,7 @@ const Projects = () => {
       title: "Loan Predictor Model",
       description:
         "A machine learning model that predicts loan approvals using Python, pandas, numpy, seaborn, and scikit-learn. Includes data preprocessing, visualization, and classification.",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=500&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop", // loan-related laptop image
       technologies: ["Python", "pandas", "numpy", "seaborn", "scikit-learn"],
       liveUrl: "#",
       githubUrl: "#",
