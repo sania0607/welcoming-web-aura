@@ -5,10 +5,10 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
-      title: "Loan Predictor Model",
+      title: "Student Grade Analyzer",
       description:
-        "A machine learning model that predicts loan approvals using Python, pandas, numpy, seaborn, and scikit-learn. Includes data preprocessing, visualization, and classification.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop", // loan-related laptop image
+        "A data science tool built with Python, pandas, numpy, seaborn, and scikit-learn to analyze and visualize student grades, predict performance, and gain insights from educational datasets.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop", // student analysis image
       technologies: ["Python", "pandas", "numpy", "seaborn", "scikit-learn"],
       liveUrl: "#",
       githubUrl: "#",
