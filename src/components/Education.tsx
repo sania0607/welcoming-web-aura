@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { Calendar, MapPin, Award } from 'lucide-react';
 const Education = () => {
   const education = [{
     degree: "Bachelor's in Computer Science",
-    institution: "University Name",
+    institution: "Dr. A.P.J Abdul Kalam Technical University",
     location: "City, State",
     period: "2020 - 2024",
     description: "Focused on software development, algorithms, and web technologies. Maintained a strong GPA while participating in coding competitions and tech clubs.",
