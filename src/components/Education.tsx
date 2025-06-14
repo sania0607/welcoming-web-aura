@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Calendar, MapPin, Award } from 'lucide-react';
 const Education = () => {
@@ -8,13 +9,6 @@ const Education = () => {
     period: "2020 - 2024",
     description: "Focused on software development, algorithms, and web technologies. Maintained a strong GPA while participating in coding competitions and tech clubs.",
     achievements: ["Dean's List", "Programming Club President", "Hackathon Winner"]
-  }, {
-    degree: "Web Development Bootcamp",
-    institution: "Coding Bootcamp",
-    location: "Online",
-    period: "2023",
-    description: "Intensive full-stack web development program covering modern technologies and industry best practices.",
-    achievements: ["Top 10% Graduate", "Capstone Project Award", "Peer Mentor"]
   }];
   const certifications = [{
     title: "Responsive Web Design",
