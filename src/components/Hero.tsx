@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="animate-fade-in-up">
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
-            <div className="relative">
+            <div className="relative mt-16">
               {/* GLOWING BACKGROUND */}
               <div className="w-48 h-48 rounded-full overflow-hidden profile-hover floating-animation border-4 border-white shadow-2xl">
                 {/* USER PROFILE IMAGE HERE */}
