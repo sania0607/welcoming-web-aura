@@ -1,6 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-16">
@@ -39,10 +40,25 @@ const Hero = () => {
               Get In Touch
             </Button>
             
-            <Button variant="outline" size="lg" className="border-2 border-purple-300 text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-full transition-all duration-300">
-              <Download className="mr-2" size={20} />
-              Download Resume
-            </Button>
+            {/* Make Download Resume functional */}
+            <a 
+              href="/resume.pdf" 
+              download
+              tabIndex={-1}
+              className="focus:outline-none"
+            >
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-2 border-purple-300 text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-full transition-all duration-300"
+              >
+                <span>
+                  <Download className="mr-2" size={20} />
+                  Download Resume
+                </span>
+              </Button>
+            </a>
           </div>
 
           {/* Social Links */}
