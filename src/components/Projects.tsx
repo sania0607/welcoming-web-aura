@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -14,10 +15,11 @@ const Projects = () => {
       githubUrl: "#",
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
-      technologies: ["React", "TypeScript", "Socket.io", "Express"],
+      title: "Student Grade Analyzer",
+      description:
+        "A robust system using Python, pandas, numpy, seaborn, and scikit-learn to analyze students' academic data, visualize trends in grades, predict future performance, and provide actionable insights for educators.",
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=500&h=300&fit=crop", // data/code themed for student analytics
+      technologies: ["Python", "pandas", "numpy", "seaborn", "scikit-learn"],
       liveUrl: "#",
       githubUrl: "#"
     },
@@ -105,3 +107,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
