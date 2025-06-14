@@ -1,38 +1,39 @@
-
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-
 const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     subject: '',
     message: ''
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
+      description: "Thank you for reaching out. I'll get back to you soon!"
     });
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
-
-  return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-mint/20 to-peach/20">
+  return <section id="contact" className="py-20 bg-gradient-to-b from-mint/20 to-peach/20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
@@ -60,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-gray-800">Email</p>
-                  <p className="text-gray-600">your.email@example.com</p>
+                  <p className="text-gray-600">saniarajput0607@gmail.com</p>
                 </div>
               </div>
 
@@ -89,21 +90,11 @@ const Contact = () => {
             <div className="mt-8">
               <h4 className="text-lg font-medium mb-4 text-gray-800">Follow Me</h4>
               <div className="flex space-x-4">
-                <a
-                  href="https://github.com/sania0607"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-white/50 backdrop-blur-sm border border-white/30 text-gray-700 hover:text-purple-600 hover:bg-white/70 transition-all duration-300 transform hover:scale-110"
-                >
+                <a href="https://github.com/sania0607" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/50 backdrop-blur-sm border border-white/30 text-gray-700 hover:text-purple-600 hover:bg-white/70 transition-all duration-300 transform hover:scale-110">
                   <Github size={24} />
                 </a>
                 
-                <a
-                  href="https://www.linkedin.com/in/saniarajput06"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-white/50 backdrop-blur-sm border border-white/30 text-gray-700 hover:text-blue-600 hover:bg-white/70 transition-all duration-300 transform hover:scale-110"
-                >
+                <a href="https://www.linkedin.com/in/saniarajput06" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/50 backdrop-blur-sm border border-white/30 text-gray-700 hover:text-blue-600 hover:bg-white/70 transition-all duration-300 transform hover:scale-110">
                   <Linkedin size={24} />
                 </a>
               </div>
@@ -121,32 +112,14 @@ const Contact = () => {
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                       Your Name
                     </label>
-                    <Input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full"
-                      placeholder="John Doe"
-                    />
+                    <Input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required className="w-full" placeholder="John Doe" />
                   </div>
                   
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                       Email Address
                     </label>
-                    <Input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full"
-                      placeholder="john@example.com"
-                    />
+                    <Input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="w-full" placeholder="john@example.com" />
                   </div>
                 </div>
 
@@ -154,38 +127,17 @@ const Contact = () => {
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                     Subject
                   </label>
-                  <Input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    className="w-full"
-                    placeholder="Let's work together!"
-                  />
+                  <Input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} required className="w-full" placeholder="Let's work together!" />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Message
                   </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="w-full"
-                    placeholder="Tell me about your project or just say hello!"
-                  />
+                  <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={5} className="w-full" placeholder="Tell me about your project or just say hello!" />
                 </div>
 
-                <Button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
-                >
+                <Button type="submit" className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
                   <Send className="mr-2" size={20} />
                   Send Message
                 </Button>
@@ -194,8 +146,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
