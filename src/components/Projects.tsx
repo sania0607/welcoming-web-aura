@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -6,10 +5,10 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
-      title: "Student Grade Analyzer",
+      title: "Loan Predictor",
       description:
-        "A data science tool built with Python, pandas, numpy, seaborn, and scikit-learn to analyze and visualize student grades, predict performance, and gain insights from educational datasets.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop", // student analysis image
+        "A machine learning app built with Python, pandas, numpy, seaborn, and scikit-learn to predict loan approval based on applicants' financial and demographic data, providing insights for both applicants and lenders.",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500&h=300&fit=crop", // loan finance themed image
       technologies: ["Python", "pandas", "numpy", "seaborn", "scikit-learn"],
       liveUrl: "#",
       githubUrl: "#",
@@ -107,4 +106,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
