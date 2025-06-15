@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,7 +10,7 @@ const Projects = () => {
       description:
         "A machine learning app built with Python, pandas, numpy, seaborn, and scikit-learn to predict loan approval based on applicants' financial and demographic data, providing insights for both applicants and lenders.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500&h=300&fit=crop", // loan finance themed image
-      technologies: ["Python", "pandas", "numpy", "seaborn", "scikit-learn"],
+      technologies: ["HTML", "CSS", "JS"],
       liveUrl: "#",
       githubUrl: "#",
     },
@@ -106,3 +107,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
