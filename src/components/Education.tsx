@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Calendar, MapPin, Award } from 'lucide-react';
 
@@ -6,7 +7,7 @@ const Education = () => {
     degree: "Bachelor's in Computer Science",
     institution: "Dr. A.P.J Abdul Kalam Technical University",
     location: "Bijnor, Uttar Pradesh",
-    period: "2020 - 2024",
+    period: "2023 - 2027",
     description: "Focused on software development, algorithms, and web technologies. Maintained a strong GPA while participating in coding competitions and tech clubs.",
     achievements: ["Dean's List", "Programming Club President", "Hackathon Winner"]
   }];
